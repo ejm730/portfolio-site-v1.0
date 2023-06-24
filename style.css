@@ -1,4 +1,4 @@
-/* Create CSS variables at the root of the document to be used throughout the style sheet */
+
 :root {
     --white: #ffffff;
     --darkblack: #000000;
@@ -27,7 +27,6 @@
   header {
     padding: 40px;
     text-align: center;
-    /* Refer to CSS values by the name of the custom property we assigned it */
     background: var(--darkblack);
     color: var(--white);
     border-radius: 20px;
@@ -122,7 +121,6 @@
   }
 
   .project-item > header {
-    /* This is the same as `border-radius: 50px 50px 0 0 */
     border-radius: var(--border-radius) var(--border-radius) 0 0;
     padding: 20px;
     
