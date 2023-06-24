@@ -1,0 +1,165 @@
+/* Create CSS variables at the root of the document to be used throughout the style sheet */
+:root {
+    --white: #ffffff;
+    --darkblack: #000000;
+    --border-radius: 50px;
+  }
+  
+  body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header {
+    padding: 40px;
+    text-align: center;
+    /* Refer to CSS values by the name of the custom property we assigned it */
+    background: var(--darkblack);
+    color: var(--white);
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 20px 5px #841313;
+  }
+  
+  nav {
+    display: flex;
+    background-color: var(--darkblack);
+    border-radius: 20px;
+    justify-content: space-evenly;
+    
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  nav a {
+    color: var(--white);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    
+    
+  }
+  
+  nav a:hover {
+    color: var(--white);
+    opacity: 0.8;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer {
+   
+    text-align: center;
+    margin-top: auto;
+  }
+  
+
+  #about {
+       
+    padding: 50px;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    align-items: column;
+    text-align: center;
+  }
+
+  .projects {
+    flex: 0 0 100%;
+    background-color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+  }
+
+  
+  
+  .project-item {
+    
+    border-width: 1px;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    flex: 0 0 300px;
+    box-shadow: 0px 0px 20px 5px #841313;
+    margin: 20px;
+    background-color: var(--darkblack);
+  }
+  
+  .project-item:hover {
+    background-color: var(--darkblack);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .project-item > header {
+    /* This is the same as `border-radius: 50px 50px 0 0 */
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    padding: 20px;
+    
+
+  }
+  
+  .project-item > p {
+    text-align: center;
+    color: var(--white);
+  }
+  
+  .project-item > img {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .contact {
+    padding: 50px;
+    margin-top: 200px;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    align-items: column;
+    text-align: center;
+    border-width: 1px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 5px #841313;
+    background-color: var(--darkblack);
+    color: var(--white);
+  }
+  
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+  
