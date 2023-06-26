@@ -42,6 +42,7 @@
     background-color: var(--darkblack);
     border-radius: var(--border-radius2);
     justify-content: space-evenly;
+    padding-top: 10px;
 
     
   }
