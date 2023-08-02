@@ -119,8 +119,8 @@
     
     border-width: 1px;
     border-radius: var(--border-radius);
-    padding: 10px;
-    flex: 0 0 300px;
+    padding: 20px;
+    flex: 0 0 400px;
     box-shadow: var(--box-shadow);
     margin: 20px;
     background-color: var(--darkblack);
@@ -147,9 +147,11 @@
   .project-item > img {
     margin-top: 10px;
     width: 100%;
-    border-radius: var(--border-radius2);
+    border-radius: var(--border-radius);
   }
-  
+  .gif-image {
+    border-radius: 60px;
+}
   .contact {
     padding: 50px;
     margin-top: 200px;
